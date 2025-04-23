@@ -361,6 +361,27 @@
       document.getElementById("booksSection").style.display = "none";
       document.getElementById("menu").style.display = "none";
     }
+    function showGameSection() {
+  document.getElementById("gameSection").style.display = "block";
+  document.getElementById("examSection").style.display = "none";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("chessText").style.display = "none";
+  document.getElementById("booksSection").style.display = "none";
+  document.getElementById("menu").style.display = "none";
+  document.getElementById("heartMessage").innerText = "";
+}
+
+function showMessage(index) {
+  const messages = [
+    "Դու աշխարհի ամենափայլուն լույսն ես։",
+    "Քո ժպիտը մի ամբողջ օր կարող է լուսավորել։",
+    "Սրտիս զարկերից ամեն մեկը քեզ համար է։",
+    "Իմ կյանքում քո ներկայությունը հրաշք է։",
+    "Ամեն օրը քեզ սիրելով է սկսվում։"
+  ];
+  document.getElementById("heartMessage").innerText = messages[index];
+}
+
 
     function showChessText() {
       document.getElementById("chessText").style.display = "block";
